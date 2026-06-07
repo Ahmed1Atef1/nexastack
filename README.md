@@ -22,6 +22,50 @@ It features a responsive, dark-mode native interface, a secure backend with rate
 
 ---
 
+# 📸 Application Preview
+
+## 🌐 Landing Page
+
+![Landing Page](assets/screenshots/landing-page.png)
+
+---
+
+## 🛠️ Services Section
+
+![Services](assets/screenshots/services-section.png)
+
+---
+
+## ℹ️ About Section
+
+![About](assets/screenshots/about-section.png)
+
+---
+
+## 💼 Featured Solutions
+
+![Featured Solutions](assets/screenshots/featured-solutions.png)
+
+---
+
+## 📬 Contact & Inquiry System
+
+![Contact Form](assets/screenshots/contact-form.png)
+
+---
+
+## 📊 Administrative Dashboard
+
+![Admin Dashboard](assets/screenshots/admin-dashboard.png)
+
+---
+
+## 🔍 Inquiry Details
+
+![Inquiry Details](assets/screenshots/inquiry-details.png)
+
+---
+
 ## 🔒 Security & Performance Features
 1. **Global Exception Handling:** Custom ASP.NET middleware intercepts unhandled exceptions and standardizes them into `ProblemDetails` JSON objects, preventing stack trace leaks.
 2. **Anti-Spam Rate Limiting:** Built-in .NET 8 middleware restricts API calls to `4 requests / 2 minutes` per IP address, backed by real-time UI countdowns.
