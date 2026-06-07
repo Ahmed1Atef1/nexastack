@@ -179,3 +179,10 @@ $RECYCLE.BIN/
 *.key
 *.crt
 *.cer
+
+## Databases
+*.mdf
+*.ldf
+*.ndf
+*.sqlite
+*.db

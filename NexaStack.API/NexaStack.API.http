@@ -1,6 +1,27 @@
-@NexaStack.API_HostAddress = http://localhost:5016
+@host = http://localhost:5016
 
-GET {{NexaStack.API_HostAddress}}/weatherforecast/
+### Get all contact inquiries
+GET {{host}}/api/contactinquiries
 Accept: application/json
 
-###
+### Get a single contact inquiry by ID
+GET {{host}}/api/contactinquiries/1
+Accept: application/json
+
+### Create a new contact inquiry
+POST {{host}}/api/contactinquiries
+Content-Type: application/json
+
+{
+  "fullName": "Ahmed Atef",
+  "email": "ahmed@example.com",
+  "subject": "Internship Assessment Question",
+  "message": "Hello, I have a question about the NexaStack full-stack assessment requirements."
+}
+
+### Toggle read status
+PATCH {{host}}/api/contactinquiries/1/read
+Accept: application/json
+
+### Delete a contact inquiry
+DELETE {{host}}/api/contactinquiries/1

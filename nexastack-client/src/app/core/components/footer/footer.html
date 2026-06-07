@@ -1,0 +1,43 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Section -->
+      <div class="footer-brand-col">
+        <a class="footer-brand" (click)="scrollTo('hero')" style="cursor: pointer;">
+          <span class="brand-text">Nexa</span><span class="brand-text-accent">Stack</span>
+        </a>
+        <p class="footer-tagline">We Build Digital Products That Scale</p>
+        <p class="footer-description">
+          A professional software agency specializing in full-stack web applications, 
+          enterprise solutions, and digital transformation.
+        </p>
+      </div>
+
+      <!-- Links Section -->
+      <div class="footer-links-col">
+        <h3 class="footer-heading">Company</h3>
+        <ul class="footer-list">
+          <li><a class="footer-link" (click)="scrollTo('hero')" style="cursor: pointer;">Home</a></li>
+          <li><a class="footer-link" (click)="scrollTo('about')" style="cursor: pointer;">About Us</a></li>
+          <li><a class="footer-link" (click)="scrollTo('services')" style="cursor: pointer;">Services</a></li>
+          <li><a class="footer-link" (click)="scrollTo('contact')" style="cursor: pointer;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="footer-contact-col">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="footer-list">
+          <li class="footer-contact-item">ahmedatef.zyada&#64;gmail.com</li>
+          <li class="footer-contact-item">+201150624771</li>
+          <li class="footer-contact-item">6th of October City<br>Giza, Egypt</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} NexaStack. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
