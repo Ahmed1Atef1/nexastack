@@ -186,3 +186,6 @@ $RECYCLE.BIN/
 *.ndf
 *.sqlite
 *.db
+
+## Private Docs
+INTERVIEW_PREP.md

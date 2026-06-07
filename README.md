@@ -72,4 +72,3 @@ It features a responsive, dark-mode native interface, a secure backend with rate
 ## 📂 Project Structure
 * `/NexaStack.API` - The ASP.NET Core 8 backend.
 * `/nexastack-client` - The Angular 21 frontend.
-* `INTERVIEW_PREP.md` - Technical deep-dives and architectural design decisions (useful for reviewing code patterns).
