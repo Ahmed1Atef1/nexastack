@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToastService, Toast } from '../../services/toast.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -102,15 +102,13 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     }
   `]
 })
-export class ToastComponent implements OnInit {
+export class ToastComponent {
   toast: Toast = { message: '', type: 'info', visible: false };
 
   constructor(
     private readonly toastService: ToastService,
     private readonly cdr: ChangeDetectorRef
-  ) {}
-
-  ngOnInit() {
+  ) {
     this.toastService.toast$.pipe(takeUntilDestroyed()).subscribe(t => {
       this.toast = t;
       this.cdr.markForCheck();
